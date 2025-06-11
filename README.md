@@ -4,22 +4,42 @@ A web-based Hospital Management System built using Spring Boot and MySQL that en
 
 ---
 
-📌 Features
+##📌 Features
 
-👥 User Roles
-- Patient
+##👥 User Roles
+- ##Patient
   - Registration/Login
   - View and edit profile
   - Search doctors by specialization, name, or location
   - Book and manage appointments
   - View medical history and prescriptions
 
-- Doctor
+- ##Doctor
   - Registration/Login
   - Manage schedule and availability
   - View and respond to appointment requests
   - Write consultation notes and diagnoses
   - View patient medical records
+
+---
+## 🗓️ Appointment Management
+
+Appointments are at the core of the system. Patients can:
+- View available slots for a selected doctor
+- Book appointments based on doctor availability
+- Receive confirmation or rejection from the doctor
+- Cancel or reschedule their bookings
+
+Doctors can:
+- Block unavailable days
+- Manage appointment requests
+- View upcoming and past consultations
+- Record medical notes during or after the session
+
+The appointment module includes:
+- Appointment Status: `Pending`, `Approved`, `Cancelled`, `Completed`
+- Slot Management: Time and date selection
+- Notifications (basic UI alerts or future email/SMS)
 
 ---
 
@@ -36,7 +56,7 @@ A web-based Hospital Management System built using Spring Boot and MySQL that en
 ---------------------------------------------------------------
 ---
 
-💾 Database Schema
+##💾 Database Schema
 
 - `patients` table: Stores patient details.
 - `doctors` table: Stores doctor details.
@@ -45,7 +65,7 @@ A web-based Hospital Management System built using Spring Boot and MySQL that en
 
 ---
 
-🚀 Getting Started
+##🚀 Getting Started
 
 Prerequisites
 - Java 17+
